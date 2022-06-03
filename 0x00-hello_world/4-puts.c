@@ -1,13 +1,15 @@
 #include <stdio.h>
 
 /**
-* main(): -This is the main entry point for my program
+* main -This is the main entry point for my program
+*
+* Return: returns 0 if successful
 */
+
 int main(void)
 	{
-	char mystr[] = "\"Programming is like building a multilingual puzzle";
+	char mystr[] = "\"Programming is like building a multilingual puzzle\n";
 
 	puts(mystr);
 	return (0);
-	/* 'return()': - return 0 for success */
 	}
