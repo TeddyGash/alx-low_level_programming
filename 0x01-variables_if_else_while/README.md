@@ -12,3 +12,4 @@ What each script does
 - 9-print_comb.c: prints 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 - 100-print_comb3.c: prints all possible different combinations of two digits
 - 101-print_comb4.c: prints all possible different combinations of three digits.
+- 102-print_comb5.c: prints all possible combinations of two two-digit numbers
