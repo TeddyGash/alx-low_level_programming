@@ -7,7 +7,6 @@
  * Return: 0 on success
  */
 
-int _putchar(char c);
 
 int print_alphabet(void)
 {
