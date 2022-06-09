@@ -2,7 +2,6 @@
 
 /**
  * print_alphabet - prints alphabets in lowercase followed by newline
- *@c: character to print
  *
  * Return: 0 on success
  */
