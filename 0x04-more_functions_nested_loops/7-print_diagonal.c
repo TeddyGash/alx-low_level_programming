@@ -13,6 +13,8 @@ void print_diagonal(int n)
 	int i;
 	int c;
 
+	if (n > 0)
+	{
 	/* loop for backslash*/
 	for (i = 1; i <= n; i++)
 		{
@@ -27,5 +29,9 @@ void print_diagonal(int n)
 			_putchar('\\');
 			_putchar('\n');
 		}
+	}
+	else
+	{
 	_putchar('\n');
+	}
 }
