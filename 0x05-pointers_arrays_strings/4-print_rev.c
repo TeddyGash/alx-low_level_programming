@@ -14,12 +14,18 @@ void print_rev(char *s)
 	int i;
 	int n = l - 1;
 	char rev[1000];
+	char c;
+	int r;
 
 	for (i = 0; i < l; i++)
 	{
 		rev[i] = s[n];
 		n--;
 	}
-
-	puts(rev);
+	for (r = 0; r <= n; r++)
+		{
+		c = rev[r];
+		_putchar(c);
+		}
+	_putchar('\n');
 }
