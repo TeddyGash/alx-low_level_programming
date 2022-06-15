@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 
 /**
  * print_rev - prints a string, in reverse, followed by a new line
@@ -10,38 +8,18 @@
 
 void print_rev(char *s)
 {
-	int n  = strlen(s);
-	int index = n - 1;
-	int i;
-	char temp_array[1000];
+	int index;
 
-	/* skip null */
-	if (s == 0)
+	index = 0;
+
+	while (s[index] != '\0')
 	{
-		return;
+		index++;
 	}
 
-	/* skip empty string */
-	if (*s == 0)
+	for (index = index - 1; index >= 0; index--)
 	{
-		return;
+		_putchar(s[index]);
 	}
-
-	/* reverse string */
-	for (i = 0; i < n; i++)
-	{
-		temp_array[i] = s[index];
-		index--;
-
-		/**
-		 * As 2 characters are changing place for each cycle of the loop
-		 * only traverse half the array of characters
-
-		if (index == (size / 2))
-		{
-			break;
-		}
-		*/
-	}
-	puts(temp_array);
+	_putchar('\n');
 }
