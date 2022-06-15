@@ -10,22 +10,38 @@
 
 void print_rev(char *s)
 {
-	int l = strlen(s);
+	int n  = strlen(s);
+	int index = n - 1;
 	int i;
-	int n = l - 1;
-	char rev[1000];
-	char c;
-	int r;
+	char temp_array[1000];
 
-	for (i = 0; i < l; i++)
+	/* skip null */
+	if (s == 0)
 	{
-		rev[i] = s[n];
-		n--;
+		return;
 	}
-	for (r = 0; r <= n; r++)
+
+	/* skip empty string */
+	if (*s == 0)
+	{
+		return;
+	}
+
+	/* reverse string */
+	for (i = 0; i < n; i++)
+	{
+		temp_array[i] = s[index];
+		index--;
+
+		/**
+		 * As 2 characters are changing place for each cycle of the loop
+		 * only traverse half the array of characters
+
+		if (index == (size / 2))
 		{
-		c = rev[r];
-		_putchar(c);
+			break;
 		}
-	_putchar('\n');
+		*/
+	}
+	puts(temp_array);
 }
