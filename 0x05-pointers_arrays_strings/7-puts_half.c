@@ -9,13 +9,21 @@ void puts_half(char *str)
 {
 	int index = 0;
 	int mid, i, r;
-
+	/* skip null */
+	if (str == 0)
+	{
+		return;
+	}
+	/* skip empty string */
+	if (*str == 0)
+	{
+		return;
+	}
 	/*find str length*/
 	while (str[index] != '\0')
 	{
 		index++;
 	}
-
 	if (index % 2 == 0)
 	{
 		mid = (index / 2);
@@ -23,8 +31,8 @@ void puts_half(char *str)
 		{
 			_putchar(str[i]);
 		}
+		_putchar('\n');
 	}
-
 	else
 	{
 		mid = ((index + 1) / 2);
@@ -32,6 +40,6 @@ void puts_half(char *str)
 		{
 		_putchar(str[r]);
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
