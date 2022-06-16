@@ -7,7 +7,7 @@
 
 void print_number(int n)
 {
-	int copy = n;
+	unsigned int copy = n;
 
 	if (n < 0)
 	{
