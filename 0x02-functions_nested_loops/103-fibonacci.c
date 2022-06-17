@@ -13,7 +13,7 @@ int main(void)
 	unsigned long num1 = 0;
 	unsigned long num2 = 1;
 	unsigned long sum = 0;
-	unsigned long sum_even = 0;	
+	unsigned long sum_even = 0;
 
 	for (i = 1; sum <= 4000000; i++)
 	{
