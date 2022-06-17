@@ -24,7 +24,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%lu", sum);
+			printf("%lu\n", sum);
 		}
 	}
 
